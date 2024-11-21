@@ -1,6 +1,7 @@
 <template>
     <div>
       <h1>To-Do List</h1>
+      <p>Add an item in the box below to add an item to the list!</p>
       <input type="text" v-model="newTodo" @keyup.enter="addTodo">
       <ul>
         <li v-for="todo in todos" :key="todo.id">
